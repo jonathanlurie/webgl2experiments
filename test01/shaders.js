@@ -1,4 +1,6 @@
 
+// *************************** VERTEX SHADER ***********************************
+
 var vertexShaderSrc = `
 #version 300 es
 
@@ -15,6 +17,7 @@ void main() {
 }
 `;
 
+// *************************** FRAGMENT SHADER *********************************
 
 var fragmentShaderSrc = `
 #version 300 es
@@ -31,6 +34,8 @@ void main() {
   outColor = vec4(1, 0, 0.5, 1);
 }
 `;
+
+// **************************** END ********************************************
 
 fragmentShaderSrc = fragmentShaderSrc.trim();
 vertexShaderSrc = vertexShaderSrc.trim();
